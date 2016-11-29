@@ -13,4 +13,7 @@ public interface INeo4jRepo extends GraphRepository<OutlineHNode>{
 	public OutlineHNode findByIds(@Param("id") long id);
 	
 	*/
+	
+	//@Query("MATCH (n:OutlineHNode{id:{id}}) OPTIONAL MATCH -[r: suboutline| phraseoutline]-(m) RETURN n, r, m")
+	//public OutlineHNode findByIds(@Param("id") long id);
 }

@@ -29,8 +29,8 @@ public class App
 
     @Bean
     public boolean testNeoj() {
-		val node =  neo4jRepo.findOne(10L,2);
-		
+		//val node =  neo4jRepo.findByIds(10l);//neo4jRepo.findOne(10L,2);
+    	val node = neo4jRepo.findOne(10L,2);
 		node.getPhrases().forEach(System.out::println);
 		node.getChildNodes().forEach(System.out::println);
 		System.out.println(node);

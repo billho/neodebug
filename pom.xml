@@ -11,6 +11,14 @@
 	<url>http://maven.apache.org</url>
 	<repositories>
 		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/libs-snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/libs-milestone</url>
@@ -18,13 +26,22 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>spring-release</id>
+			<name>Spring Release</name>
+			<url>https://repo.spring.io/libs-release</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.12</junit.version>
 		<lombok.version>1.16.10</lombok.version>
-		<spring-boot.version>2.0.0.BUILD-SNAPSHOT</spring-boot.version>
+		<spring-boot.version>1.5.0.BUILD-SNAPSHOT</spring-boot.version>
 	</properties>
 
 	<dependencyManagement>
